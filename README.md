@@ -39,7 +39,7 @@ qr3 = QuantumRegister(3, "creg1")
   qr3 = ClassicalRegister(3, "creg1")
 ```
 - [x] Criar um circuito utilizando os três registradores.
-Passo a passo: utilizar a biblioteca  QuantumRegister
+- Passo a passo: utilizar a biblioteca  QuantumRegister
 ```
 qr1 = QuantumRegister(2, "qreq1")
 qr2 = QuantumRegister(1, "qreq2")
@@ -51,10 +51,29 @@ combined_circ.qubits
 ```
 
 - [x] Encontrar índice e registro de um qubit com find_bit()
-Passo a passo: combined_circ.qubits() mostra todos os qubits.
+- Passo a passo: combined_circ.qubits() mostra todos os qubits.
 ```
 desired_qubit = qr2[0]
 print("Index:", combined_circ.find_bit(desired_qubit).index)
 print("Register", combined_circ.find_bit(desired_qubit).registers)
+```
+
+- [x] Listar tudo o que existe no circuito e salvar em data
+```
+combined_circ.x(0)
+combined_circ.data
+```
+# Próximos passos:
+- [] criar entrelaçamento
+- [] circuito Bell State
+- [] Percorrer qc.data em loop
+- [] Listar todas as portas do circuito
+- [] Modificar instruções manualmente
+- [] Aplicar shots
+- [] Bell State, ver 50/50
+
+```
+author: Amanda Rodrigues de Siqueira
+```
 ```
 
