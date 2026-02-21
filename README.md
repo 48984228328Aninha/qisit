@@ -1,4 +1,4 @@
-<img width="156" height="106" alt="image" src="https://github.com/user-attachments/assets/9bf0e2ca-f14c-4ce6-a048-9e6bad47f490" /># QISKIT
+# QISKIT
 Um repositório para estudar a linguagem qiskit e construir circuitos utilizando um hardware comum. Meu objetivo é ir do zero até o mais avançado neste repositório, sempre documentando minhas mudanças, é público e com o intuito de fazer outras pessoas aprenderem junto.
 
 ### - Link da documentação oficial utilizada para estudo: 
