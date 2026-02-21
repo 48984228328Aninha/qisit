@@ -128,6 +128,12 @@ qc_a.append(inst, [1,3])
 
 qc_a.draw("mpl")
 ```
+
+- [x] Fazer metódo decompose. Ele gera um novo circuito e não mexe no atual
+```
+qc_a.decompose().draw("mpl")
+```
+
 <div align=center>
 <img src="https://quantum.cloud.ibm.com/docs/images/guides/construct-circuits/extracted-outputs/81b682dd-45cb-4492-809e-d9e8ebbf5600-0.svg">
 </div>
