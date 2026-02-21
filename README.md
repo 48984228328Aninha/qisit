@@ -121,14 +121,25 @@ combined = qc_a.compose(qc_b, qubits=[1,3])
 combined.draw("mpl")
 ```
 
+- [x] Transformar circuitos em instruções: use to_instruction
+```
+inst = qc_b.to_instruction()
+qc_a.append(inst, [1,3])
+
+qc_a.draw("mpl")
+```
+<div align=center>
+<img src="https://quantum.cloud.ibm.com/docs/images/guides/construct-circuits/extracted-outputs/81b682dd-45cb-4492-809e-d9e8ebbf5600-0.svg">
+</div>
+
 # Próximos passos:
-- [] criar entrelaçamento
-- [] circuito Bell State
-- [] Percorrer qc.data em loop
-- [] Listar todas as portas do circuito
-- [] Modificar instruções manualmente
-- [] Aplicar shots
-- [] Bell State, ver 50/50
+- [ ] criar entrelaçamento
+- [ ] circuito Bell State
+- [ ] Percorrer qc.data em loop
+- [x] Listar todas as portas do circuito
+- [ ] Modificar instruções manualmente
+- [ ] Aplicar shots
+- [ ] Bell State, ver 50/50
 
 ---------------------------------------------------------------------------
 
