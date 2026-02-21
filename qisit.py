@@ -54,3 +54,7 @@ inst = qc_b.to_instruction()
 qc_a.append(inst, [1,3])
 
 qc_a.draw("mpl")
+
+gate = qc_b.to_gate().control()
+qc_a.append(gate, [0,1,3])
+qc_a.draw("mpl")
